@@ -6,8 +6,13 @@
 <script type="text/javascript" src="paper-full.js"></script>
 <link rel="stylesheet" href="app.css">
 <script type="text/paperscript" canvas="myCanvas">
-var myCircle = new Path.Circle(new Point(100, 100), 100);
-myCircle.fillColor = 'red';
+function onKeyDown(event) {
+    var maxPoint = new Point(view.size.width, view.size.height);
+    var randomPoint = Point.random();
+    var point = maxPoint * randomPoint;
+    new Path.Circle(point, 10).fillColor = "green";
+}
+
 </script>
 </head>
 <body>
