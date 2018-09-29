@@ -1,0 +1,19 @@
+{
+  "name": "sound-keyboard-game",
+  "version": "1.0.0",
+  "description": "A simple keyboard game using paper.js and howler.js",
+  "main": "app.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rfatykhov"
+  },
+  "author": "Ruslan Fatykhov",
+  "license": "ISC",
+  "dependencies": {
+    "howler": "^2.0.15",
+    "paper": "^0.11.5"
+  }
+}
