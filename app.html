@@ -3,19 +3,14 @@
 <head>
 <title>Sound Keyboard Game</title>
 
-<script type="text/javascript" src="paper-full.js"></script>
-<link rel="stylesheet" href="app.css">
-<script type="text/paperscript" canvas="myCanvas">
-function onKeyDown(event) {
-    var maxPoint = new Point(view.size.width, view.size.height);
-    var randomPoint = Point.random();
-    var point = maxPoint * randomPoint;
-    new Path.Circle(point, 10).fillColor = "green";
-}
-
-</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.js"></script>
+<link rel="stylesheet" type="text/css" href="app.css">
+<script type="text/paperscript" canvas="myCanvas" src="app.js"></script>
 </head>
 <body>
-    <canvas id="myCanvas" resize></canvas>
+<p class="title">Welcome to the Keyboard Sound Game!</p>
+<canvas id="myCanvas" resize></canvas>
+
 </body>
 </html>
